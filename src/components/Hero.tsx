@@ -134,10 +134,8 @@ export function Hero() {
         ref={contentRef}
         className="container mx-auto px-6 md:px-12 relative z-20 pb-0 pl-6 pr-6 pt-8 md:pt-0"
         style={{
-          willChange: "transform",
-          transform: "translateY(0px)",
-          perspective: "1000px",
-          transformStyle: "preserve-3d",
+          willChange: "auto",
+          transform: "none",
         }}
       >
         <div className="mb-16 md:mb-24">
