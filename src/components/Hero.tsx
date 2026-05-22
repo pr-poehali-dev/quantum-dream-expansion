@@ -141,12 +141,14 @@ export function Hero() {
         }}
       >
         <div className="mb-16 md:mb-24">
-          <div className="flex justify-center mb-6">
-            <img
-              src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/bucket/df30de85-5fef-4537-ad2d-82ac8d7b4816.jpg"
-              alt="ЦКиФ Молодёжный строительный центр"
-              className="h-24 md:h-32 w-auto max-w-sm md:max-w-lg object-contain brightness-[5] contrast-50"
-            />
+          <div className="flex flex-col items-center mb-6 gap-0">
+            <div className="flex items-center gap-4">
+              <span className="text-4xl md:text-5xl font-black text-white tracking-tight leading-none">ЦКиФ</span>
+              <div className="flex flex-col leading-tight">
+                <span className="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">МОЛОДЁЖНЫЙ</span>
+                <span className="text-sm md:text-base font-medium text-white/80 tracking-[0.2em] uppercase">Строительный центр</span>
+              </div>
+            </div>
           </div>
 
           <h1
