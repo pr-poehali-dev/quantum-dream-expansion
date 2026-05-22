@@ -143,20 +143,7 @@ export function Hero() {
         <div className="mb-16 md:mb-24">
           <div className="flex flex-col items-center mb-6 gap-0">
             <div className="flex items-center gap-4">
-              {/* Иконка домика как на логотипе */}
-              <div className="relative flex-shrink-0">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-16 md:h-16">
-                  {/* Крыша красная */}
-                  <polygon points="4,26 28,4 52,26" fill="#cc0000" />
-                  {/* Крыша жёлтая (внутренняя часть) */}
-                  <polygon points="10,26 28,10 46,26" fill="#f5c800" />
-                  {/* Стены */}
-                  <rect x="10" y="26" width="36" height="22" fill="white" opacity="0.95" />
-                  {/* Красная полоса снизу */}
-                  <rect x="10" y="44" width="36" height="4" fill="#cc0000" />
-                </svg>
-                <span className="absolute inset-0 flex items-end justify-center pb-2 text-[10px] md:text-xs font-black text-white leading-none">ЦКиФ</span>
-              </div>
+              <span className="text-4xl md:text-5xl font-black text-white tracking-tight leading-none">ЦКиФ</span>
               <div className="flex flex-col leading-tight">
                 <span className="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">МОЛОДЁЖНЫЙ</span>
                 <span className="text-sm md:text-base font-medium text-white/80 tracking-[0.2em] uppercase">Строительный центр</span>
