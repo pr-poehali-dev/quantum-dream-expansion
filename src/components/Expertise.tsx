@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Layers, Truck, BadgeCheck, Headphones } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Широкий ассортимент",
+    description: "Более 5000 наименований строительных материалов: от фундамента до кровли. Всё, что нужно для строительства и ремонта.",
+    icon: Layers,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Быстрая доставка",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Доставляем материалы на объект в день заказа. Собственный автопарк и надёжная логистика по всему городу и области.",
+    icon: Truck,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Гарантия качества",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Работаем только с проверенными производителями. Все материалы сертифицированы и соответствуют строительным нормам.",
+    icon: BadgeCheck,
   },
   {
-    title: "Градостроительство",
+    title: "Экспертная поддержка",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Наши специалисты помогут с подбором материалов, расчётом объёма и стоимости. Консультируем бесплатно.",
+    icon: Headphones,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Почему выбирают нас</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Надёжность</HighlightedText>, проверенная
             <br />
-            практикой
+            годами
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Работаем на строительном рынке более 10 лет. Поставляем материалы для частных застройщиков, строительных компаний и крупных девелоперов.
           </p>
         </div>
 
