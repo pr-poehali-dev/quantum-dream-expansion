@@ -60,15 +60,15 @@ export function Header() {
         </ul>
 
         <div className="hidden md:flex flex-col items-end gap-1.5">
-          <div className="flex items-center gap-4 text-white text-sm">
-            <a href="tel:+79230200666" className="hover:text-orange-300 transition-colors font-medium tracking-wide">
+          <div className="flex items-center gap-4 text-white text-base">
+            <a href="tel:+79230200666" className="hover:text-orange-300 transition-colors font-bold tracking-wide">
               8 (923) 020-06-66
             </a>
-            <a href="mailto:CKIF@mail.ru" className="hover:text-orange-300 transition-colors">
+            <a href="mailto:CKIF@mail.ru" className="hover:text-orange-300 transition-colors font-medium">
               CKIF@mail.ru
             </a>
           </div>
-          <p className="text-white/50 text-xs tracking-wide">Пн–Пт 9:00–18:00 &nbsp;·&nbsp; Сб 9:00–16:00</p>
+          <p className="text-white/60 text-sm tracking-wide">Пн–Пт 9:00–18:00 &nbsp;·&nbsp; Сб 9:00–16:00</p>
           <a
             href="#contact"
             className="text-xs px-4 py-1.5 bg-orange-500 hover:bg-orange-600 text-white transition-colors duration-300 tracking-wide"
