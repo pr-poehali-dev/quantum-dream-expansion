@@ -118,17 +118,21 @@ export function Hero() {
 
   return (
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Фоновое фото */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hously-background.png"
-          alt="Минималистичный архитектурный интерьер"
+          src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/files/3a81b969-06a2-47aa-8e66-a0611d19a73e.jpg"
+          alt="Склад строительных материалов"
           className="w-full h-full object-cover object-center"
         />
       </div>
 
+      {/* Тёмный градиент для читаемости */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+
       <div
         ref={contentRef}
-        className="container mx-auto px-6 md:px-12 lg:pt-0 relative z-10 pb-0 pl-1 pr-1 pt-8 md:pt-0"
+        className="container mx-auto px-6 md:px-12 relative z-20 pb-0 pl-6 pr-6 pt-8 md:pt-0"
         style={{
           willChange: "transform",
           transform: "translateY(0px)",
@@ -136,31 +140,57 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Строительные материалы"}</p>
+        <div className="mb-16 md:mb-24">
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-300 mb-4">{"ЦКиФ · Молодёжный строительный центр"}</p>
 
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-6xl font-medium text-balance text-center text-white mb-6 tracking-tight leading-[0.95] lg:text-8xl"
           >
             {"Всё для вашей"}
             <br />
-            <span className="text-orange-200">{"стройки"}</span>
+            <span className="text-orange-300">{"стройки"}</span>
           </h1>
+
+          <p className="text-center text-white/70 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+            Более 5&nbsp;000 наименований в&nbsp;наличии. Доставка в&nbsp;день заказа. Работаем с&nbsp;частными и&nbsp;корпоративными заказчиками.
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-7 py-3 text-sm tracking-wide transition-colors duration-300"
+            >
+              Смотреть каталог
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white px-7 py-3 text-sm tracking-wide transition-colors duration-300"
+            >
+              Получить консультацию
+            </a>
+          </div>
+        </div>
+
+        {/* Статистика */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10 max-w-3xl mx-auto">
+          {[
+            { value: "5 000+", label: "Наименований" },
+            { value: "10 лет", label: "На рынке" },
+            { value: "В день", label: "Доставка" },
+            { value: "7 / 7", label: "Работаем" },
+          ].map((stat) => (
+            <div key={stat.label} className="bg-black/40 backdrop-blur-sm px-6 py-5 text-center">
+              <p className="text-2xl font-medium text-white mb-1">{stat.value}</p>
+              <p className="text-xs tracking-[0.15em] uppercase text-white/50">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        <img
-          src="/images/hously-foreground.png"
-          alt="Мраморная кухонная столешница"
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
-
       {animationComplete && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce z-30">
-          <ArrowDown className="w-5 h-5 text-muted-foreground" />
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-30">
+          <ArrowDown className="w-5 h-5 text-white/50" />
         </div>
       )}
     </section>

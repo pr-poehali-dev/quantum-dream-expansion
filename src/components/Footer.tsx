@@ -6,7 +6,11 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <img
+                src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/bucket/c1e12601-d5fe-41cd-88d4-48a00d235fa5.jpg"
+                alt="ЦКиФ Молодёжный строительный центр"
+                className="h-10 w-auto object-contain"
+              />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Строительные материалы оптом и в розницу. Более 5000 наименований в наличии. Доставка на объект в день заказа.
@@ -70,7 +74,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 СтройМаркет. Все права защищены.</p>
+          <p>© 2025 ЦКиФ Молодёжный строительный центр. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
