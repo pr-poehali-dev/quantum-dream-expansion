@@ -143,7 +143,17 @@ export function Hero() {
         <div className="mb-16 md:mb-24">
           <div className="flex flex-col items-center mb-6 gap-0">
             <div className="flex items-center gap-4">
-              <span className="text-4xl md:text-5xl font-black text-white tracking-tight leading-none">ЦКиФ</span>
+              <div className="flex flex-col items-center gap-0">
+                {/* Жёлтый треугольник с красной каймой сверху */}
+                <svg viewBox="0 0 80 28" className="w-16 md:w-20" preserveAspectRatio="none">
+                  <polygon points="40,2 78,28 2,28" fill="#cc0000" />
+                  <polygon points="40,7 72,28 8,28" fill="#f5c800" />
+                </svg>
+                {/* Слово */}
+                <span className="text-4xl md:text-5xl font-black text-white tracking-tight leading-none">ЦКиФ</span>
+                {/* Красная полоска снизу */}
+                <div className="w-full h-2.5 bg-red-700 mt-0.5" />
+              </div>
               <div className="flex flex-col leading-tight">
                 <span className="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">МОЛОДЁЖНЫЙ</span>
                 <span className="text-sm md:text-base font-medium text-white/80 tracking-[0.2em] uppercase">Строительный центр</span>
