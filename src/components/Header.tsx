@@ -59,17 +59,17 @@ export function Header() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className={cn(
-            "hidden md:inline-flex items-center gap-2 text-sm px-5 py-2.5 transition-all duration-300",
-            scrolled
-              ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
-              : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
-          )}
-        >
-          Связаться
-        </a>
+        <div className="hidden md:flex flex-col items-end gap-0.5">
+          <div className="flex items-center gap-4 text-white text-sm">
+            <a href="tel:+79230200666" className="hover:text-orange-300 transition-colors font-medium tracking-wide">
+              8 (923) 020-06-66
+            </a>
+            <a href="mailto:CKIF@mail.ru" className="hover:text-orange-300 transition-colors">
+              CKIF@mail.ru
+            </a>
+          </div>
+          <p className="text-white/50 text-xs tracking-wide">Пн–Пт 9:00–18:00 &nbsp;·&nbsp; Сб 9:00–16:00</p>
+        </div>
 
         <button
           className="md:hidden z-50 transition-colors duration-300 text-white"
