@@ -145,7 +145,7 @@ export function Hero() {
             <div className="flex items-center gap-4">
               <div className="flex flex-col items-center gap-0">
                 {/* Жёлтый треугольник с красной каймой сверху */}
-                <svg viewBox="0 0 80 28" className="w-16 md:w-20" preserveAspectRatio="none">
+                <svg viewBox="0 0 80 28" className="w-20 md:w-28" preserveAspectRatio="none">
                   <polygon points="40,2 78,28 2,28" fill="#cc0000" />
                   <polygon points="40,7 72,28 8,28" fill="#f5c800" />
                 </svg>
