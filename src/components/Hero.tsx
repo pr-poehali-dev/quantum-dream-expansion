@@ -141,7 +141,9 @@ export function Hero() {
         }}
       >
         <div className="mb-16 md:mb-24">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-300 mb-4">{"ЦКиФ · Молодёжный строительный центр"}</p>
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-300 mb-4 inline-block w-full">
+            <span className="bg-black/40 backdrop-blur-sm px-4 py-1.5 rounded-sm">{"ЦКиФ · Молодёжный строительный центр"}</span>
+          </p>
 
           <h1
             ref={titleRef}
