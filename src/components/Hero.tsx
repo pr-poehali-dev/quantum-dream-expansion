@@ -145,7 +145,7 @@ export function Hero() {
             <img
               src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/bucket/df30de85-5fef-4537-ad2d-82ac8d7b4816.jpg"
               alt="ЦКиФ Молодёжный строительный центр"
-              className="h-20 md:h-28 w-auto max-w-xs md:max-w-md object-contain opacity-50 brightness-[3] contrast-50"
+              className="h-20 md:h-28 w-auto max-w-xs md:max-w-md object-contain opacity-90 brightness-[4] contrast-75"
             />
           </div>
 
