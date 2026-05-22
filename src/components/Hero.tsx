@@ -127,8 +127,8 @@ export function Hero() {
         />
       </div>
 
-      {/* Тёмный градиент для читаемости */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+      {/* Градиент для читаемости */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/35 via-black/20 to-black/50" />
 
       <div
         ref={contentRef}
