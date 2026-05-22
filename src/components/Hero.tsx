@@ -121,8 +121,8 @@ export function Hero() {
       {/* Фоновое фото */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/files/0285ef41-98ae-4b92-ac89-75ed9b276201.jpg"
-          alt="Строительные материалы: ондулин, металлопрофиль, теплица, цемент, ондувилла"
+          src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/files/5e17b403-551f-417d-add8-32e77826bbc7.jpg"
+          alt="Панорама современного жилого квартала"
           className="w-full h-full object-cover object-center"
         />
       </div>
