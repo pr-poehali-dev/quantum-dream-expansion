@@ -196,7 +196,7 @@ export function Hero() {
             { value: "5 000+", label: "Наименований" },
             { value: "10 лет", label: "На рынке" },
             { value: "В день", label: "Доставка" },
-            { value: "7 / 7", label: "Работаем" },
+            { value: "6 / 1", label: "Работаем" },
           ].map((stat) => (
             <div key={stat.label} className="bg-black/40 backdrop-blur-sm px-6 py-5 text-center">
               <p className="text-2xl font-medium text-white mb-1">{stat.value}</p>
