@@ -39,10 +39,10 @@ export function Header() {
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
           {[
             { label: "Главная", href: "#hero" },
-            { label: "О нас", href: "#about" },
             { label: "Каталог", href: "#projects" },
-            { label: "Категории", href: "#services" },
-            { label: "Вопросы", href: "#faq" },
+            { label: "Доставка", href: "#services" },
+            { label: "Контакты", href: "#contact" },
+            { label: "О нас", href: "#about" },
           ].map((item) => (
             <li key={item.label}>
               <a
@@ -96,10 +96,10 @@ export function Header() {
           <ul className="flex flex-col gap-6 mb-8">
             {[
               { label: "Главная", href: "#hero" },
-              { label: "О нас", href: "#about" },
               { label: "Каталог", href: "#projects" },
-              { label: "Категории", href: "#services" },
-              { label: "Вопросы", href: "#faq" },
+              { label: "Доставка", href: "#services" },
+              { label: "Контакты", href: "#contact" },
+              { label: "О нас", href: "#about" },
             ].map((item) => (
               <li key={item.label}>
                 <a
