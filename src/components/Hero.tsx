@@ -141,9 +141,13 @@ export function Hero() {
         }}
       >
         <div className="mb-16 md:mb-24">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-300 mb-4 inline-block w-full">
-            <span className="bg-black/40 backdrop-blur-sm px-4 py-1.5 rounded-sm">{"ЦКиФ · Молодёжный строительный центр"}</span>
-          </p>
+          <div className="flex justify-center mb-6">
+            <img
+              src="https://cdn.poehali.dev/projects/5405e243-bb57-43f7-8527-32d908df697a/bucket/df30de85-5fef-4537-ad2d-82ac8d7b4816.jpg"
+              alt="ЦКиФ Молодёжный строительный центр"
+              className="h-14 md:h-16 w-auto object-contain opacity-80 brightness-[2] contrast-75"
+            />
+          </div>
 
           <h1
             ref={titleRef}
