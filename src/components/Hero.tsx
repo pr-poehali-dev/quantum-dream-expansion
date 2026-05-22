@@ -43,7 +43,7 @@ export function Hero() {
                 <div className="w-full h-2.5 bg-red-700 mt-0.5" />
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">МОЛОДЁЖНЫЙ</span>
+                <span className="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">МОЛОДЕЖНЫЙ</span>
                 <span className="text-sm md:text-base font-medium text-white/80 tracking-[0.2em] uppercase">Строительный центр</span>
               </div>
             </div>
